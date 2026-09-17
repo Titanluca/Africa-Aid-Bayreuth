@@ -1,0 +1,6 @@
+.openai/
+dist/
+output/
+tmp/
+scripts/
+img/
