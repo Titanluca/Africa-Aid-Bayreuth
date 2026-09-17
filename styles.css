@@ -104,7 +104,7 @@ a {
   background:
     radial-gradient(circle at 82% 42%, rgba(221, 169, 52, 0.24), transparent 24rem),
     linear-gradient(90deg, rgba(9, 54, 41, 0.96) 0%, rgba(9, 54, 41, 0.86) 48%, rgba(9, 54, 41, 0.58) 100%),
-    url("assets/favicon.png") right 8% center / min(48vw, 560px) auto no-repeat;
+    url("img/Favicon.png") right 8% center / min(48vw, 560px) auto no-repeat;
   color: var(--white);
 }
 
@@ -168,6 +168,10 @@ h3 {
   gap: 12px;
   flex-wrap: wrap;
   margin-top: 28px;
+}
+
+.donation-actions {
+  margin-top: 24px;
 }
 
 .button {
@@ -439,7 +443,7 @@ h3 {
   background:
     radial-gradient(circle at 82% 46%, rgba(221, 169, 52, 0.26), transparent 24rem),
     linear-gradient(135deg, rgba(15, 77, 58, 0.96), rgba(29, 107, 78, 0.82)),
-    url("assets/favicon.png") right 7% center / min(42vw, 500px) auto no-repeat;
+    url("img/Favicon.png") right 7% center / min(42vw, 500px) auto no-repeat;
   color: var(--white);
 }
 
@@ -897,7 +901,7 @@ h3 {
     background:
       radial-gradient(circle at 82% 42%, rgba(221, 169, 52, 0.2), transparent 18rem),
       linear-gradient(90deg, rgba(9, 54, 41, 0.96), rgba(9, 54, 41, 0.76)),
-      url("assets/favicon.png") right 1rem center / min(72vw, 360px) auto no-repeat;
+      url("img/Favicon.png") right 1rem center / min(72vw, 360px) auto no-repeat;
   }
 
   .goals-section,
