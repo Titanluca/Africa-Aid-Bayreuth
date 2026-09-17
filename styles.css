@@ -104,7 +104,7 @@ a {
   background:
     radial-gradient(circle at 82% 42%, rgba(221, 169, 52, 0.24), transparent 24rem),
     linear-gradient(90deg, rgba(9, 54, 41, 0.96) 0%, rgba(9, 54, 41, 0.86) 48%, rgba(9, 54, 41, 0.58) 100%),
-    url("img/Favicon.png") right 8% center / min(48vw, 560px) auto no-repeat;
+    url("img/Banner/Stock.jpg") center center / cover no-repeat;
   color: var(--white);
 }
 
@@ -236,8 +236,10 @@ h3 {
 .people-strip,
 .donation-section,
 .additional-people,
+.map-section,
 .profile-index,
 .expert-team-profiles,
+.supporters-section,
 .legal-content,
 .deep-article,
 .profiles {
@@ -320,6 +322,34 @@ h3 {
   font-weight: 800;
 }
 
+.map-section {
+  padding: 0 0 clamp(48px, 7vw, 82px);
+}
+
+.map-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(360px, 1.25fr);
+  gap: clamp(24px, 5vw, 54px);
+  align-items: center;
+  padding: clamp(24px, 4vw, 38px);
+  border-radius: 8px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 30px rgba(31, 45, 41, 0.08);
+}
+
+.map-card p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 1.06rem;
+}
+
+.map-card img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+}
+
 .team-preview {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
@@ -368,17 +398,17 @@ h3 {
   border: 5px solid var(--paper);
 }
 
-.mini-person img[src$="hoffmann-j.png"],
-.additional-grid img[src$="hoffmann-j.png"] {
+.mini-person img[src$="HoffmannJ.png"],
+.additional-grid img[src$="HoffmannJ.png"] {
   object-position: 22% 48%;
 }
 
-.person-media img[src$="hoffmann-k.png"],
-.mini-person img[src$="hoffmann-k.png"] {
+.person-media img[src$="HoffmannK.png"],
+.mini-person img[src$="HoffmannK.png"] {
   object-position: 54% 28%;
 }
 
-.person-media img[src$="kripp.jpg"] {
+.person-media img[src$="Kripp.jpg"] {
   object-position: 50% 36%;
 }
 
@@ -443,7 +473,7 @@ h3 {
   background:
     radial-gradient(circle at 82% 46%, rgba(221, 169, 52, 0.26), transparent 24rem),
     linear-gradient(135deg, rgba(15, 77, 58, 0.96), rgba(29, 107, 78, 0.82)),
-    url("img/Favicon.png") right 7% center / min(42vw, 500px) auto no-repeat;
+    url("img/Banner/Stock.jpg") center center / cover no-repeat;
   color: var(--white);
 }
 
@@ -788,6 +818,64 @@ h3 {
   color: var(--muted);
 }
 
+.additional-grid article.wide {
+  grid-column: 1 / -1;
+}
+
+.companion-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.companion-images img {
+  margin-bottom: 0;
+}
+
+.companion-note {
+  margin-top: 10px;
+}
+
+.supporters-section {
+  padding: clamp(42px, 6vw, 76px) 0;
+}
+
+.supporter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.supporter-card {
+  display: grid;
+  align-content: start;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 30px rgba(31, 45, 41, 0.08);
+}
+
+.supporter-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+
+.supporter-card h2 {
+  font-size: 1.35rem;
+  line-height: 1.18;
+  margin-bottom: 8px;
+}
+
+.supporter-card p {
+  color: #3f4d49;
+  font-size: 0.98rem;
+}
+
 .legal-content {
   display: grid;
   gap: 22px;
@@ -868,6 +956,7 @@ h3 {
   .team-preview,
   .donation-section,
   .additional-people,
+  .map-card,
   .person-profile,
   .team-facts,
   .expert-card {
@@ -876,7 +965,8 @@ h3 {
 
   .goals-grid,
   .people-strip,
-  .facts-grid {
+  .facts-grid,
+  .supporter-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -901,7 +991,7 @@ h3 {
     background:
       radial-gradient(circle at 82% 42%, rgba(221, 169, 52, 0.2), transparent 18rem),
       linear-gradient(90deg, rgba(9, 54, 41, 0.96), rgba(9, 54, 41, 0.76)),
-      url("img/Favicon.png") right 1rem center / min(72vw, 360px) auto no-repeat;
+      url("img/Banner/Stock.jpg") center center / cover no-repeat;
   }
 
   .goals-section,
@@ -910,10 +1000,12 @@ h3 {
   .people-strip,
   .donation-section,
   .additional-people,
+  .map-section,
   .profile-index,
   .personal-facts,
   .team-facts,
   .expert-team-profiles,
+  .supporters-section,
   .legal-content,
   .deep-article,
   .profiles {
@@ -923,7 +1015,9 @@ h3 {
   .goals-grid,
   .people-strip,
   .additional-grid,
-  .facts-grid {
+  .facts-grid,
+  .supporter-grid,
+  .companion-images {
     grid-template-columns: 1fr;
   }
 
