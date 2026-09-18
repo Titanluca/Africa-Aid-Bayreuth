@@ -578,6 +578,32 @@ h3 {
   text-decoration: none;
 }
 
+.profile-index a.jump-with-icon {
+  gap: 9px;
+  padding-right: 6px;
+}
+
+.jump-icon {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 2px solid var(--paper);
+}
+
+.jump-icon.team-rainer-icon {
+  object-position: 10% 42%;
+}
+
+.jump-icon.team-stefanie-icon {
+  object-position: 51% 42%;
+}
+
+.jump-icon.team-phillip-icon {
+  object-position: 92% 42%;
+}
+
 .personal-facts,
 .team-facts,
 .expert-team-profiles {
@@ -636,25 +662,11 @@ h3 {
   font-size: 0.94rem;
 }
 
-.family-box {
-  margin-top: 16px;
-  padding: 22px;
-  border-radius: 8px;
-  background: #eef5df;
-  border: 1px solid #d9e8c5;
-}
-
-.family-box h3 {
-  margin-bottom: 10px;
-}
-
-.family-box ul,
 .team-facts ul {
   margin: 0;
   padding-left: 20px;
 }
 
-.family-box li,
 .team-facts li {
   margin: 8px 0;
 }
