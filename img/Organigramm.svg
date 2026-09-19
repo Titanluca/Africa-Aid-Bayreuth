@@ -1,182 +1,170 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1480 930" role="img" aria-labelledby="org-title org-desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 1080" role="img" aria-labelledby="org-title org-desc">
   <title id="org-title">Organigramm von Africa-Aid-Bayreuth e.V.</title>
   <desc id="org-desc">Hierarchisches Organigramm mit achtzehn Personen und ihren Funktionen im Verein.</desc>
   <defs>
-    <clipPath id="avatar-clip" clipPathUnits="objectBoundingBox">
-      <circle cx=".5" cy=".5" r=".5"/>
-    </clipPath>
-    <linearGradient id="org-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset=".55" stop-color="#f8f5ed"/>
-      <stop offset="1" stop-color="#eef5df"/>
-    </linearGradient>
-    <filter id="node-shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#173d34" flood-opacity=".12"/>
-    </filter>
+    <clipPath id="normal-840-100-clip"><circle cx="840" cy="100" r="38"/></clipPath><clipPath id="normal-840-275-clip"><circle cx="840" cy="275" r="38"/></clipPath><clipPath id="normal-150-470-clip"><circle cx="150" cy="470" r="38"/></clipPath><clipPath id="normal-426-470-clip"><circle cx="426" cy="470" r="38"/></clipPath><clipPath id="normal-top-702-470-clip"><circle cx="702" cy="470" r="38"/></clipPath><clipPath id="normal-978-470-clip"><circle cx="978" cy="470" r="38"/></clipPath><clipPath id="normal-top-1254-470-clip"><circle cx="1254" cy="470" r="38"/></clipPath><clipPath id="normal-1530-470-clip"><circle cx="1530" cy="470" r="38"/></clipPath><clipPath id="team-rainer-clip"><circle cx="100" cy="720" r="38"/></clipPath><clipPath id="normal-310-720-clip"><circle cx="310" cy="720" r="38"/></clipPath><clipPath id="team-stefanie-clip"><circle cx="520" cy="720" r="38"/></clipPath><clipPath id="team-phillip-clip"><circle cx="730" cy="720" r="38"/></clipPath><clipPath id="normal-top-940-720-clip"><circle cx="940" cy="720" r="38"/></clipPath><clipPath id="normal-1150-720-clip"><circle cx="1150" cy="720" r="38"/></clipPath><clipPath id="normal-left-top-1360-720-clip"><circle cx="1360" cy="720" r="38"/></clipPath><clipPath id="normal-top-1570-720-clip"><circle cx="1570" cy="720" r="38"/></clipPath><clipPath id="normal-1250-940-clip"><circle cx="1250" cy="940" r="38"/></clipPath><clipPath id="normal-1470-940-clip"><circle cx="1470" cy="940" r="38"/></clipPath>
+    <linearGradient id="org-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".58" stop-color="#f8f5ed"/><stop offset="1" stop-color="#eef5df"/></linearGradient>
   </defs>
   <style>
     .bg { fill: url(#org-bg); }
-    .arc { fill: none; stroke: #fff; stroke-width: 34; opacity: .62; }
-    .line { fill: none; stroke: #7e8b87; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
-    .node-card { fill: #fff; stroke: #d9e2dd; stroke-width: 1.4; filter: url(#node-shadow); }
+    .arc { fill: none; stroke: #fff; stroke-width: 34; opacity: .58; }
+    .line { fill: none; stroke: #7e8b87; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+    .node-card { fill: #fff; stroke: #d9e2dd; stroke-width: 1.5; }
     .avatar-ring { fill: none; stroke: #fff; stroke-width: 6; }
-    .name { font-family: Arial, sans-serif; font-size: 17px; font-weight: 900; fill: #26332f; text-anchor: middle; }
+    .name { font-family: Arial, sans-serif; font-size: 18px; font-weight: 900; fill: #26332f; text-anchor: middle; }
     .role { font-family: Arial, sans-serif; font-size: 12px; font-weight: 700; fill: #6a7672; text-anchor: middle; }
-    .section-label { font-family: Arial, sans-serif; font-size: 15px; font-weight: 900; fill: #114f42; text-anchor: middle; letter-spacing: .6px; }
+    .section-label { font-family: Arial, sans-serif; font-size: 16px; font-weight: 900; fill: #114f42; text-anchor: middle; letter-spacing: .6px; }
+    .label-bg { fill: #fff; fill-opacity: .92; stroke: #d9e2dd; stroke-width: 1; }
   </style>
-  <rect class="bg" width="1480" height="930" rx="22"/>
-  <path class="arc" d="M-80 170 C260 20 510 40 820 150 S1300 250 1560 70"/>
-  <path class="arc" d="M-60 760 C250 630 520 700 820 595 S1260 520 1560 650"/>
-  <text x="740" y="42" class="section-label">AFRICA-AID-BAYREUTH E.V.</text>
-
-  <path class="line" d="M740 148 V178"/>
-  <path class="line" d="M740 293 V330 H170 V348 M740 330 H390 V348 M740 330 H610 V348 M740 330 H830 V348 M740 330 H1050 V348 M740 330 H1270 V348"/>
-  <path class="line" d="M740 293 V535 H100 V562 M740 535 H280 V562 M740 535 H460 V562 M740 535 H640 V562 M740 535 H820 V562 M740 535 H1000 V562 M740 535 H1180 V562 M740 535 H1360 V562"/>
-  <path class="line" d="M1180 710 V758 H1090 V762 M1180 758 H1270 V762"/>
-  <path class="line" d="M1000 572 V542 H740"/>
-
-  <text x="720" y="322" class="section-label">FACHVERANTWORTUNG</text>
-  <text x="720" y="527" class="section-label">PROJEKTE, EINSATZ UND STANDORT</text>
-  <text x="1180" y="750" class="section-label">EHRENAMT</text>
-
-  <g transform="translate(740 90)">
-    <rect class="node-card" x="-96" y="32" width="192" height="76" rx="12"/>
-    <image href="Kripp.jpg" x="-38" y="-50" width="76" height="76" preserveAspectRatio="xMidYMin slice" clip-path="url(#avatar-clip)"/>
-    <circle class="avatar-ring" cx="0" cy="-12" r="38"/>
-    <text class="name" y="56">Bernd Kripp</text>
-    <text class="role" y="75">Ehrenvorsitzender</text>
-    <text class="role" y="91">Hauptspender / Vertretung</text>
+  <rect class="bg" width="1680" height="1080" rx="22"/>
+  <path class="arc" d="M-80 185 C260 30 560 60 900 175 S1360 255 1760 70"/>
+  <path class="arc" d="M-60 840 C260 690 610 780 910 660 S1300 590 1740 740"/>
+  <text x="840" y="48" class="section-label">AFRICA-AID-BAYREUTH E.V.</text>
+  <g class="connectors">
+    <path class="line" d="M840 220 V237"/>
+    <path class="line" d="M840 395 V420 H150 V432 M840 420 H426 V432 M840 420 H702 V432 M840 420 H978 V432 M840 420 H1254 V432 M840 420 H1530 V432"/>
+    <path class="line" d="M840 395 V665 H100 V682 M840 665 H310 V682 M840 665 H520 V682 M840 665 H730 V682 M840 665 H940 V682 M840 665 H1150 V682 M840 665 H1360 V682 M840 665 H1570 V682"/>
+    <path class="line" d="M1360 852 V880 H1250 V902 M1360 880 H1470 V902"/>
   </g>
-  <g transform="translate(740 235)">
-    <rect class="node-card" x="-88" y="32" width="176" height="70" rx="12"/>
-    <image href="Brill.jpg" x="-36" y="-48" width="72" height="72" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatar-clip)"/>
-    <circle class="avatar-ring" cx="0" cy="-12" r="36"/>
-    <text class="name" y="57">Jörg Brill</text>
-    <text class="role" y="77">Geschäftsführer</text>
-  </g>
-
-  <g transform="translate(170 400)">
-    <rect class="node-card" x="-82" y="32" width="164" height="74" rx="12"/>
-    <image href="Romer.jpg" x="-34" y="-46" width="68" height="68" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatar-clip)"/>
-    <circle class="avatar-ring" cx="0" cy="-12" r="34"/>
-    <text class="name" y="57">Thilo Romer</text>
-    <text class="role" y="76">Rechtsabteilung</text>
-    <text class="role" y="91">Datenschutz</text>
-  </g>
-  <g transform="translate(390 400)">
-    <rect class="node-card" x="-82" y="32" width="164" height="74" rx="12"/>
-    <image href="Weiß.jpg" x="-34" y="-46" width="68" height="68" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatar-clip)"/>
-    <circle class="avatar-ring" cx="0" cy="-12" r="34"/>
-    <text class="name" y="57">Frank Weiß</text>
-    <text class="role" y="78">Controlling</text>
-  </g>
-  <g transform="translate(610 400)">
-    <rect class="node-card" x="-82" y="32" width="164" height="74" rx="12"/>
-    <image href="HoffmannK.png" x="-34" y="-46" width="68" height="68" preserveAspectRatio="xMidYMin slice" clip-path="url(#avatar-clip)"/>
-    <circle class="avatar-ring" cx="0" cy="-12" r="34"/>
-    <text class="name" y="57">Karin Hoffmann</text>
-    <text class="role" y="76">Spenden</text>
-    <text class="role" y="91">Steuerberatung</text>
-  </g>
-  <g transform="translate(830 400)">
-    <rect class="node-card" x="-82" y="32" width="164" height="74" rx="12"/>
-    <image href="Oppel.jpg" x="-34" y="-46" width="68" height="68" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatar-clip)"/>
-    <circle class="avatar-ring" cx="0" cy="-12" r="34"/>
-    <text class="name" y="57">Harald Oppel</text>
-    <text class="role" y="76">Systeme, Webspace</text>
-    <text class="role" y="91">KI-Beauftragter</text>
-  </g>
-  <g transform="translate(1050 400)">
-    <rect class="node-card" x="-82" y="32" width="164" height="74" rx="12"/>
-    <image href="Silke.png" x="-34" y="-46" width="68" height="68" preserveAspectRatio="xMidYMin slice" clip-path="url(#avatar-clip)"/>
-    <circle class="avatar-ring" cx="0" cy="-12" r="34"/>
-    <text class="name" y="57">Silke Krüger</text>
-    <text class="role" y="76">Direktion</text>
-    <text class="role" y="91">Unterstützung Brill</text>
-  </g>
-  <g transform="translate(1270 400)">
-    <rect class="node-card" x="-82" y="32" width="164" height="74" rx="12"/>
-    <image href="Sascha.png" x="-34" y="-46" width="68" height="68" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatar-clip)"/>
-    <circle class="avatar-ring" cx="0" cy="-12" r="34"/>
-    <text class="name" y="57">Sascha Krüger</text>
-    <text class="role" y="78">PR-Abteilung</text>
-  </g>
-
-  <g transform="translate(100 615)">
-    <rect class="node-card" x="-78" y="32" width="156" height="74" rx="12"/>
-    <image href="Team.jpg" x="-62" y="-46" width="132" height="68" preserveAspectRatio="xMinYMid slice" clip-path="url(#avatar-clip)"/>
-    <circle class="avatar-ring" cx="0" cy="-12" r="34"/>
-    <text class="name" y="57">Rainer Rösler</text>
-    <text class="role" y="76">Baudurchführung</text>
-    <text class="role" y="91">Bauherr</text>
-  </g>
-  <g transform="translate(280 615)">
-    <rect class="node-card" x="-78" y="32" width="156" height="74" rx="12"/>
-    <image href="Sven.png" x="-34" y="-46" width="68" height="68" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatar-clip)"/>
-    <circle class="avatar-ring" cx="0" cy="-12" r="34"/>
-    <text class="name" y="57">Sven Schönstedt</text>
-    <text class="role" y="76">Bauplanung</text>
-    <text class="role" y="91">Architektur</text>
-  </g>
-  <g transform="translate(460 615)">
-    <rect class="node-card" x="-78" y="32" width="156" height="74" rx="12"/>
-    <image href="Team.jpg" x="-83" y="-46" width="166" height="68" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatar-clip)"/>
-    <circle class="avatar-ring" cx="0" cy="-12" r="34"/>
-    <text class="name" y="57">Stefanie Hoffmann</text>
-    <text class="role" y="76">Pädagogik</text>
-    <text class="role" y="91">Schulen</text>
-  </g>
-  <g transform="translate(640 615)">
-    <rect class="node-card" x="-78" y="32" width="156" height="74" rx="12"/>
-    <image href="Team.jpg" x="-104" y="-46" width="208" height="68" preserveAspectRatio="xMaxYMid slice" clip-path="url(#avatar-clip)"/>
-    <circle class="avatar-ring" cx="0" cy="-12" r="34"/>
-    <text class="name" y="57">Phillip Brüderle</text>
-    <text class="role" y="78">Logistik</text>
-  </g>
-  <g transform="translate(820 615)">
-    <rect class="node-card" x="-78" y="32" width="156" height="74" rx="12"/>
-    <image href="Mario.png" x="-34" y="-46" width="68" height="68" preserveAspectRatio="xMidYMin slice" clip-path="url(#avatar-clip)"/>
-    <circle class="avatar-ring" cx="0" cy="-12" r="34"/>
-    <text class="name" y="57">Mario Krüger</text>
-    <text class="role" y="76">Spedition</text>
-    <text class="role" y="91">Logistik-Support</text>
-  </g>
-  <g transform="translate(1000 615)">
-    <rect class="node-card" x="-78" y="32" width="156" height="74" rx="12"/>
-    <image href="ThomasHoffmann.png" x="-34" y="-46" width="68" height="68" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatar-clip)"/>
-    <circle class="avatar-ring" cx="0" cy="-12" r="34"/>
-    <text class="name" y="57">Thomas Hoffmann</text>
-    <text class="role" y="76">Catering</text>
-    <text class="role" y="91">Nahrungsversorgung</text>
-  </g>
-  <g transform="translate(1180 615)">
-    <rect class="node-card" x="-78" y="32" width="156" height="74" rx="12"/>
-    <image href="HoffmannJ.png" x="-34" y="-46" width="68" height="68" preserveAspectRatio="xMinYMin slice" clip-path="url(#avatar-clip)"/>
-    <circle class="avatar-ring" cx="0" cy="-12" r="34"/>
-    <text class="name" y="57">Janine Hoffmann</text>
-    <text class="role" y="78">Rekrutierung</text>
-  </g>
-  <g transform="translate(1360 615)">
-    <rect class="node-card" x="-78" y="32" width="156" height="74" rx="12"/>
-    <image href="Brigitte.jpg" x="-34" y="-46" width="68" height="68" preserveAspectRatio="xMidYMin slice" clip-path="url(#avatar-clip)"/>
-    <circle class="avatar-ring" cx="0" cy="-12" r="34"/>
-    <text class="name" y="57">Brigitte Kripp</text>
-    <text class="role" y="76">Immobilienpflege</text>
-    <text class="role" y="91">Bayreuth</text>
-  </g>
-
-  <g transform="translate(1090 815)">
-    <rect class="node-card" x="-78" y="32" width="156" height="68" rx="12"/>
-    <image href="HoffmannL.png" x="-34" y="-46" width="68" height="68" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatar-clip)"/>
-    <circle class="avatar-ring" cx="0" cy="-12" r="34"/>
-    <text class="name" y="57">Luca Hoffmann</text>
-    <text class="role" y="78">Ehrenamt</text>
-  </g>
-  <g transform="translate(1270 815)">
-    <rect class="node-card" x="-78" y="32" width="156" height="68" rx="12"/>
-    <image href="Merle.png" x="-34" y="-46" width="68" height="68" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatar-clip)"/>
-    <circle class="avatar-ring" cx="0" cy="-12" r="34"/>
-    <text class="name" y="57">Merle Wilders</text>
-    <text class="role" y="78">Ehrenamt</text>
-  </g>
+  <rect class="label-bg" x="660" y="386" width="360" height="28" rx="14"/><text x="840" y="406" class="section-label">FACHVERANTWORTUNG</text>
+  <rect class="label-bg" x="575" y="625" width="530" height="28" rx="14"/><text x="840" y="645" class="section-label">PROJEKTE, EINSATZ UND STANDORT</text>
+  <rect class="label-bg" x="1286" y="846" width="148" height="28" rx="14"/><text x="1360" y="866" class="section-label">EHRENAMT</text>
+  <g class="node" id="node-bernd">
+  <rect class="node-card" x="745.0" y="150.0" width="190" height="82" rx="13"/>
+  <image href="Kripp.jpg" x="802" y="62" width="76" height="76" preserveAspectRatio="xMidYMid slice" clip-path="url(#normal-840-100-clip)"/>
+  <circle class="avatar-ring" cx="840" cy="100" r="38"/>
+  <text class="name" x="840" y="179.0">Bernd Kripp</text>
+  <text class="role" x="840" y="200.0">Ehrenvorsitzender</text>
+  <text class="role" x="840" y="216.0">Hauptspender / Vertretung</text>
+</g>
+  <g class="node" id="node-brill">
+  <rect class="node-card" x="745.0" y="325.0" width="190" height="70" rx="13"/>
+  <image href="Brill.jpg" x="802" y="237" width="76" height="76" preserveAspectRatio="xMidYMid slice" clip-path="url(#normal-840-275-clip)"/>
+  <circle class="avatar-ring" cx="840" cy="275" r="38"/>
+  <text class="name" x="840" y="354.0">Jörg Brill</text>
+  <text class="role" x="840" y="375.0">Geschäftsführer</text>
+</g>
+  <g class="node" id="node-romer">
+  <rect class="node-card" x="55.0" y="520.0" width="190" height="82" rx="13"/>
+  <image href="Romer.jpg" x="112" y="432" width="76" height="76" preserveAspectRatio="xMidYMid slice" clip-path="url(#normal-150-470-clip)"/>
+  <circle class="avatar-ring" cx="150" cy="470" r="38"/>
+  <text class="name" x="150" y="549.0">Thilo Romer</text>
+  <text class="role" x="150" y="570.0">Rechtsabteilung</text>
+  <text class="role" x="150" y="586.0">Datenschutz</text>
+</g>
+  <g class="node" id="node-weiss">
+  <rect class="node-card" x="331.0" y="520.0" width="190" height="70" rx="13"/>
+  <image href="Weiß.jpg" x="388" y="432" width="76" height="76" preserveAspectRatio="xMidYMid slice" clip-path="url(#normal-426-470-clip)"/>
+  <circle class="avatar-ring" cx="426" cy="470" r="38"/>
+  <text class="name" x="426" y="549.0">Frank Weiß</text>
+  <text class="role" x="426" y="570.0">Controlling</text>
+</g>
+  <g class="node" id="node-karin">
+  <rect class="node-card" x="607.0" y="520.0" width="190" height="82" rx="13"/>
+  <image href="HoffmannK.png" x="664" y="432" width="76" height="76" preserveAspectRatio="xMidYMin slice" clip-path="url(#normal-top-702-470-clip)"/>
+  <circle class="avatar-ring" cx="702" cy="470" r="38"/>
+  <text class="name" x="702" y="549.0">Karin Hoffmann</text>
+  <text class="role" x="702" y="570.0">Spenden</text>
+  <text class="role" x="702" y="586.0">Steuerberatung</text>
+</g>
+  <g class="node" id="node-oppel">
+  <rect class="node-card" x="883.0" y="520.0" width="190" height="82" rx="13"/>
+  <image href="Oppel.jpg" x="940" y="432" width="76" height="76" preserveAspectRatio="xMidYMid slice" clip-path="url(#normal-978-470-clip)"/>
+  <circle class="avatar-ring" cx="978" cy="470" r="38"/>
+  <text class="name" x="978" y="549.0">Harald Oppel</text>
+  <text class="role" x="978" y="570.0">Systeme, Webspace</text>
+  <text class="role" x="978" y="586.0">KI-Beauftragter</text>
+</g>
+  <g class="node" id="node-silke">
+  <rect class="node-card" x="1159.0" y="520.0" width="190" height="82" rx="13"/>
+  <image href="Silke.png" x="1216" y="432" width="76" height="76" preserveAspectRatio="xMidYMin slice" clip-path="url(#normal-top-1254-470-clip)"/>
+  <circle class="avatar-ring" cx="1254" cy="470" r="38"/>
+  <text class="name" x="1254" y="549.0">Silke Krüger</text>
+  <text class="role" x="1254" y="570.0">Direktion</text>
+  <text class="role" x="1254" y="586.0">Unterstützung Brill</text>
+</g>
+  <g class="node" id="node-sascha">
+  <rect class="node-card" x="1435.0" y="520.0" width="190" height="70" rx="13"/>
+  <image href="Sascha.png" x="1492" y="432" width="76" height="76" preserveAspectRatio="xMidYMid slice" clip-path="url(#normal-1530-470-clip)"/>
+  <circle class="avatar-ring" cx="1530" cy="470" r="38"/>
+  <text class="name" x="1530" y="549.0">Sascha Krüger</text>
+  <text class="role" x="1530" y="570.0">PR-Abteilung</text>
+</g>
+  <g class="node" id="node-rainer">
+  <rect class="node-card" x="5.0" y="770.0" width="190" height="82" rx="13"/>
+  <image href="Team.jpg" x="18.4" y="639.1" width="387.6" height="217.9" preserveAspectRatio="none" clip-path="url(#team-rainer-clip)"/>
+  <circle class="avatar-ring" cx="100" cy="720" r="38"/>
+  <text class="name" x="100" y="799.0">Rainer Rösler</text>
+  <text class="role" x="100" y="820.0">Baudurchführung</text>
+  <text class="role" x="100" y="836.0">Bauherr</text>
+</g>
+  <g class="node" id="node-sven">
+  <rect class="node-card" x="215.0" y="770.0" width="190" height="82" rx="13"/>
+  <image href="Sven.png" x="272" y="682" width="76" height="76" preserveAspectRatio="xMidYMid slice" clip-path="url(#normal-310-720-clip)"/>
+  <circle class="avatar-ring" cx="310" cy="720" r="38"/>
+  <text class="name" x="310" y="799.0">Sven Schönstedt</text>
+  <text class="role" x="310" y="820.0">Bauplanung</text>
+  <text class="role" x="310" y="836.0">Architektur</text>
+</g>
+  <g class="node" id="node-stefanie">
+  <rect class="node-card" x="412.0" y="770.0" width="216" height="82" rx="13"/>
+  <image href="Team.jpg" x="324.5" y="641.8" width="387.6" height="217.9" preserveAspectRatio="none" clip-path="url(#team-stefanie-clip)"/>
+  <circle class="avatar-ring" cx="520" cy="720" r="38"/>
+  <text class="name" x="520" y="799.0">Stefanie Hoffmann</text>
+  <text class="role" x="520" y="820.0">Pädagogik</text>
+  <text class="role" x="520" y="836.0">Schulen</text>
+</g>
+  <g class="node" id="node-phillip">
+  <rect class="node-card" x="628.0" y="770.0" width="204" height="70" rx="13"/>
+  <image href="Team.jpg" x="415.5" y="641.8" width="387.6" height="217.9" preserveAspectRatio="none" clip-path="url(#team-phillip-clip)"/>
+  <circle class="avatar-ring" cx="730" cy="720" r="38"/>
+  <text class="name" x="730" y="799.0">Phillip Brüderle</text>
+  <text class="role" x="730" y="820.0">Logistik</text>
+</g>
+  <g class="node" id="node-mario">
+  <rect class="node-card" x="845.0" y="770.0" width="190" height="82" rx="13"/>
+  <image href="Mario.png" x="902" y="682" width="76" height="76" preserveAspectRatio="xMidYMin slice" clip-path="url(#normal-top-940-720-clip)"/>
+  <circle class="avatar-ring" cx="940" cy="720" r="38"/>
+  <text class="name" x="940" y="799.0">Mario Krüger</text>
+  <text class="role" x="940" y="820.0">Spedition</text>
+  <text class="role" x="940" y="836.0">Logistik-Support</text>
+</g>
+  <g class="node" id="node-thomas">
+  <rect class="node-card" x="1055.0" y="770.0" width="190" height="82" rx="13"/>
+  <image href="ThomasHoffmann.png" x="1112" y="682" width="76" height="76" preserveAspectRatio="xMidYMid slice" clip-path="url(#normal-1150-720-clip)"/>
+  <circle class="avatar-ring" cx="1150" cy="720" r="38"/>
+  <text class="name" x="1150" y="799.0">Thomas Hoffmann</text>
+  <text class="role" x="1150" y="820.0">Catering</text>
+  <text class="role" x="1150" y="836.0">Nahrungsversorgung</text>
+</g>
+  <g class="node" id="node-janine">
+  <rect class="node-card" x="1265.0" y="770.0" width="190" height="70" rx="13"/>
+  <image href="HoffmannJ.png" x="1322" y="682" width="76" height="76" preserveAspectRatio="xMinYMin slice" clip-path="url(#normal-left-top-1360-720-clip)"/>
+  <circle class="avatar-ring" cx="1360" cy="720" r="38"/>
+  <text class="name" x="1360" y="799.0">Janine Hoffmann</text>
+  <text class="role" x="1360" y="820.0">Rekrutierung</text>
+</g>
+  <g class="node" id="node-brigitte">
+  <rect class="node-card" x="1475.0" y="770.0" width="190" height="82" rx="13"/>
+  <image href="Brigitte.jpg" x="1532" y="682" width="76" height="76" preserveAspectRatio="xMidYMin slice" clip-path="url(#normal-top-1570-720-clip)"/>
+  <circle class="avatar-ring" cx="1570" cy="720" r="38"/>
+  <text class="name" x="1570" y="799.0">Brigitte Kripp</text>
+  <text class="role" x="1570" y="820.0">Immobilienpflege</text>
+  <text class="role" x="1570" y="836.0">Bayreuth</text>
+</g>
+  <g class="node" id="node-luca">
+  <rect class="node-card" x="1155.0" y="990.0" width="190" height="70" rx="13"/>
+  <image href="HoffmannL.png" x="1212" y="902" width="76" height="76" preserveAspectRatio="xMidYMid slice" clip-path="url(#normal-1250-940-clip)"/>
+  <circle class="avatar-ring" cx="1250" cy="940" r="38"/>
+  <text class="name" x="1250" y="1019.0">Luca Hoffmann</text>
+  <text class="role" x="1250" y="1040.0">Ehrenamt</text>
+</g>
+  <g class="node" id="node-merle">
+  <rect class="node-card" x="1375.0" y="990.0" width="190" height="70" rx="13"/>
+  <image href="Merle.png" x="1432" y="902" width="76" height="76" preserveAspectRatio="xMidYMid slice" clip-path="url(#normal-1470-940-clip)"/>
+  <circle class="avatar-ring" cx="1470" cy="940" r="38"/>
+  <text class="name" x="1470" y="1019.0">Merle Wilders</text>
+  <text class="role" x="1470" y="1040.0">Ehrenamt</text>
+</g>
 </svg>
+

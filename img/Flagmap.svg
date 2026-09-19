@@ -1,130 +1,75 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 650" role="img" aria-labelledby="flagmap-title flagmap-desc">
   <title id="flagmap-title">Interaktive Flagmap der Einsatzländer</title>
-  <desc id="flagmap-desc">Vektorisierte Afrikakarte mit grauen Ländern und markierten Einsatzländern: DR Kongo, Angola, Mosambik, Malawi und Uganda. Beim Anklicken eines markierten Landes erscheint der Landesname.</desc>
+  <desc id="flagmap-desc">Afrikakarte mit vektorisierten Ländergrenzen. DR Kongo, Angola, Mosambik, Malawi und Uganda sind mit Flaggen markiert und per Klick abrufbar.</desc>
   <defs>
-    <pattern id="flag-drc" width="150" height="150" patternUnits="userSpaceOnUse" patternTransform="rotate(-28)">
-      <rect width="150" height="150" fill="#00a3e0"/>
-      <rect x="58" width="34" height="150" fill="#f7d618"/>
-      <rect x="67" width="16" height="150" fill="#ce1126"/>
+    <pattern id="flag-drc" width="170" height="170" patternUnits="userSpaceOnUse" patternTransform="rotate(-28)">
+      <rect width="170" height="170" fill="#00a3e0"/><rect x="66" width="38" height="170" fill="#f7d618"/><rect x="76" width="18" height="170" fill="#ce1126"/>
     </pattern>
-    <pattern id="flag-angola" width="120" height="120" patternUnits="userSpaceOnUse">
-      <rect width="120" height="60" fill="#ce1126"/>
-      <rect y="60" width="120" height="60" fill="#111"/>
-      <circle cx="60" cy="60" r="19" fill="#f7c600"/>
+    <pattern id="flag-angola" width="130" height="130" patternUnits="userSpaceOnUse">
+      <rect width="130" height="65" fill="#ce1126"/><rect y="65" width="130" height="65" fill="#111"/><circle cx="32" cy="32" r="18" fill="#f7c600"/><circle cx="98" cy="98" r="18" fill="#f7c600"/>
     </pattern>
-    <pattern id="flag-mozambique" width="150" height="150" patternUnits="userSpaceOnUse">
-      <rect width="150" height="50" fill="#007168"/>
-      <rect y="50" width="150" height="11" fill="#fff"/>
-      <rect y="61" width="150" height="28" fill="#111"/>
-      <rect y="89" width="150" height="11" fill="#fff"/>
-      <rect y="100" width="150" height="50" fill="#fce100"/>
-      <path d="M0 0 L66 75 L0 150 Z" fill="#d21034"/>
+    <pattern id="flag-mozambique" width="170" height="170" patternUnits="userSpaceOnUse">
+      <rect width="170" height="56" fill="#007168"/><rect y="56" width="170" height="12" fill="#fff"/><rect y="68" width="170" height="34" fill="#111"/><rect y="102" width="170" height="12" fill="#fff"/><rect y="114" width="170" height="56" fill="#fce100"/><path d="M0 0 L76 85 L0 170 Z" fill="#d21034"/>
     </pattern>
-    <pattern id="flag-malawi" width="110" height="110" patternUnits="userSpaceOnUse">
-      <rect width="110" height="36" fill="#111"/>
-      <rect y="36" width="110" height="38" fill="#ce1126"/>
-      <rect y="74" width="110" height="36" fill="#339e35"/>
-      <circle cx="55" cy="32" r="14" fill="#ce1126"/>
+    <pattern id="flag-malawi" width="120" height="120" patternUnits="userSpaceOnUse">
+      <rect width="120" height="40" fill="#111"/><rect y="40" width="120" height="40" fill="#ce1126"/><rect y="80" width="120" height="40" fill="#339e35"/><circle cx="60" cy="36" r="16" fill="#ce1126"/>
     </pattern>
-    <pattern id="flag-uganda" width="108" height="108" patternUnits="userSpaceOnUse">
-      <rect width="108" height="18" fill="#111"/>
-      <rect y="18" width="108" height="18" fill="#fcdc04"/>
-      <rect y="36" width="108" height="18" fill="#d90000"/>
-      <rect y="54" width="108" height="18" fill="#111"/>
-      <rect y="72" width="108" height="18" fill="#fcdc04"/>
-      <rect y="90" width="108" height="18" fill="#d90000"/>
-      <circle cx="54" cy="54" r="16" fill="#fff" opacity=".92"/>
+    <pattern id="flag-uganda" width="118" height="118" patternUnits="userSpaceOnUse">
+      <rect width="118" height="19.7" fill="#111"/><rect y="19.7" width="118" height="19.7" fill="#fcdc04"/><rect y="39.4" width="118" height="19.7" fill="#d90000"/><rect y="59.1" width="118" height="19.7" fill="#111"/><rect y="78.8" width="118" height="19.7" fill="#fcdc04"/><rect y="98.5" width="118" height="19.7" fill="#d90000"/><circle cx="59" cy="59" r="17" fill="#fff" opacity=".92"/>
     </pattern>
-    <filter id="map-shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#163d34" flood-opacity=".16"/>
-    </filter>
   </defs>
   <style>
     .sea { fill: #f7f3eb; }
-    .country { fill: #cfd8d5; stroke: #fff; stroke-width: 2.2; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
-    .country:nth-of-type(2n) { fill: #c5cfcb; }
+    .country { fill: #cfd8d5; stroke: #fff; stroke-width: 1.8; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+    .country-alt { fill: #c4cfca; }
     .flag-country { cursor: pointer; outline: none; }
     .flag-country .country { transition: filter .18s ease, stroke-width .18s ease; }
-    .flag-country:hover .country,
-    .flag-country:focus .country,
-    .flag-country.is-active .country { filter: brightness(1.08) saturate(1.1); stroke-width: 3.8; }
+    .flag-country:hover .country, .flag-country:focus .country, .flag-country.is-active .country { filter: brightness(1.08) saturate(1.08); stroke-width: 3.4; }
     .drc .country { fill: url(#flag-drc); }
-    .uganda .country { fill: url(#flag-uganda); }
     .angola .country { fill: url(#flag-angola); }
-    .malawi .country { fill: url(#flag-malawi); }
     .mozambique .country { fill: url(#flag-mozambique); }
-    .label { font-family: Arial, sans-serif; font-weight: 800; fill: #114f42; }
-    .hint { font-family: Arial, sans-serif; font-size: 13px; fill: #65736f; }
-    .popup rect,
-    .popup path { fill: #114f42; stroke: #f7d777; stroke-width: 2; }
+    .malawi .country { fill: url(#flag-malawi); }
+    .uganda .country { fill: url(#flag-uganda); }
+    .label { font-family: Arial, sans-serif; font-weight: 900; fill: #114f42; }
+    .popup rect, .popup path { fill: #114f42; stroke: #f7d777; stroke-width: 2; }
     .popup text { font-family: Arial, sans-serif; font-weight: 900; font-size: 19px; fill: #fff; text-anchor: middle; dominant-baseline: middle; }
   </style>
   <rect class="sea" width="760" height="650"/>
-  <g filter="url(#map-shadow)">
-    <path class="country" d="M192 66 264 56 302 106 270 151 202 137 174 100Z"/>
-    <path class="country" d="M202 139 270 152 286 214 224 244 178 204Z"/>
-    <path class="country" d="M286 102 386 92 420 166 365 232 288 214 270 151Z"/>
-    <path class="country" d="M420 104 462 115 462 171 421 166Z"/>
-    <path class="country" d="M463 116 560 118 594 191 514 236 462 171Z"/>
-    <path class="country" d="M566 191 644 204 674 270 610 300 535 260Z"/>
-    <path class="country" d="M224 245 286 215 330 283 286 326 220 310 188 267Z"/>
-    <path class="country" d="M330 234 406 231 450 280 421 342 330 326 286 215Z"/>
-    <path class="country" d="M407 232 514 237 536 306 474 333 450 280Z"/>
-    <path class="country" d="M535 262 610 301 594 365 528 358 474 333 536 306Z"/>
-    <path class="country" d="M170 274 220 310 214 355 163 351 139 314Z"/>
-    <path class="country" d="M215 315 287 327 294 376 244 401 208 362Z"/>
-    <path class="country" d="M294 329 330 327 322 386 294 377Z"/>
-    <path class="country" d="M333 329 421 344 408 394 322 386Z"/>
-    <path class="country" d="M475 334 529 359 511 410 444 393Z"/>
-    <path class="country" d="M529 359 595 366 608 429 550 429 511 410Z"/>
-    <path class="country" d="M151 354 208 363 205 408 156 400Z"/>
-    <path class="country" d="M208 364 244 402 230 444 187 438 205 408Z"/>
-    <path class="country" d="M246 404 294 378 322 389 294 452 230 444Z"/>
-    <path class="country" d="M409 396 445 394 471 442 434 488Z"/>
-    <path class="country" d="M444 394 512 411 498 456 470 442Z"/>
-    <path class="country" d="M609 430 665 472 674 560 630 546 587 482Z"/>
-    <path class="country" d="M230 447 293 454 292 548 225 524 202 472Z"/>
-    <path class="country" d="M435 489 499 457 512 549 456 548Z"/>
-    <path class="country" d="M456 551 512 551 540 606 488 621Z"/>
-    <path class="country" d="M296 550 389 570 421 628 329 633 254 598Z"/>
-    <path class="country" d="M392 571 456 551 488 621 421 628Z"/>
-    <path class="country" d="M330 236 365 232 352 268 322 270Z"/>
-    <path class="country" d="M365 232 407 232 395 270 352 268Z"/>
-    <path class="country" d="M611 301 675 272 706 342 665 401 595 366Z"/>
-    <path class="country" d="M676 344 717 391 696 473 665 472 610 430Z"/>
-    <path class="country" d="M665 472 696 474 676 562 674 560Z"/>
-    <path class="country" d="M188 267 139 313 108 296 128 258Z"/>
-    <path class="country" d="M138 314 161 352 124 353 103 326Z"/>
-    <path class="country" d="M125 354 156 401 113 389Z"/>
-    <path class="country" d="M156 402 204 410 188 438 139 431Z"/>
-    <path class="country" d="M188 439 230 445 203 472 151 465Z"/>
-    <path class="country" d="M514 238 566 192 536 262Z"/>
-    <path class="country" d="M594 192 645 205 611 300 566 192Z"/>
-    <path class="country" d="M287 215 330 235 322 270 330 326 287 327Z"/>
-    <path class="country" d="M421 344 475 334 445 394 409 396Z"/>
-    <g class="flag-country drc" data-country="DR Kongo" data-x="375" data-y="293" role="button" tabindex="0" aria-label="DR Kongo anzeigen">
-      <path class="country" d="M322 270 352 268 395 270 450 280 475 334 445 394 409 396 322 389 294 377 287 327Z"/>
-    </g>
-    <g class="flag-country uganda" data-country="Uganda" data-x="491" data-y="271" role="button" tabindex="0" aria-label="Uganda anzeigen">
-      <path class="country" d="M450 280 474 254 516 258 528 287 511 314 475 334Z"/>
-    </g>
-    <g class="flag-country angola" data-country="Angola" data-x="337" data-y="461" role="button" tabindex="0" aria-label="Angola anzeigen">
-      <path class="country" d="M294 377 322 389 409 396 434 488 389 570 296 550 230 445 294 452Z"/>
-    </g>
-    <g class="flag-country malawi" data-country="Malawi" data-x="526" data-y="482" role="button" tabindex="0" aria-label="Malawi anzeigen">
-      <path class="country" d="M512 411 550 429 540 535 513 549 498 456Z"/>
-    </g>
-    <g class="flag-country mozambique" data-country="Mosambik" data-x="603" data-y="521" role="button" tabindex="0" aria-label="Mosambik anzeigen">
-      <path class="country" d="M550 429 609 430 665 472 674 560 642 626 587 594 540 535Z"/>
-    </g>
+  <text x="48" y="58" class="label" font-size="26">Einsatzländer</text>
+  <g>
+    <path class="country" d="M85 92 L98.6 92 L98.1 98.8 L86.9 100.3 Z"/>
+    <path class="country country-alt" d="M135.5 114.3 L134 109.5 L129.7 109.5 L131.6 105.6 L128.7 107.1 L122.4 99.8 L111.7 97.8 L113.2 95.4 L99.1 98.8 L100 92 L190.4 92 L178.2 106.1 L175.3 120.2 L173.4 123.1 L169 120.2 L169 125 L157.3 125 L151 121.1 L147.1 128.4 L140.4 128.4 L134.5 121.6 L133.1 115.3 Z"/>
+    <path class="country" d="M593.4 133.3 L585.2 130.8 L573 142 L553.6 138.6 L540 127.9 L528.8 127 L525 122.1 L525 114.3 L518.2 112.9 L508 92 L666.3 92 L643 119.7 L627.9 120.2 L603.1 134.2 Z"/>
+    <path class="country country-alt" d="M396.8 115.8 L390.9 113.9 L388.5 118.7 L383.2 120.2 L377.8 117.3 L365.2 124.5 L358.4 121.6 L352.6 131.3 L328.8 127.4 L322.9 120.2 L313.2 117.3 L302.1 128.9 L303 139.6 L277.8 140.6 L272.4 157.6 L271 148.3 L260.8 139.1 L260.8 133.3 L254 124.5 L250.1 103.7 L257.9 92 L398.7 92 L404 103.7 L413.3 109.5 L414.2 116.3 L404.5 118.2 Z"/>
+    <path class="country" d="M514.3 124.1 L505.5 125.5 L493.9 137.2 L488.5 135.2 L477.4 140.1 L474.5 136.7 L464.7 136.7 L460.9 140.1 L445.8 124.1 L440.5 127.9 L426.4 128.4 L416.7 118.2 L414.2 109 L405.5 103.7 L400.2 92 L506.5 92 L518.2 114.8 L524.5 115.8 L525 124.1 Z"/>
+    <path class="country country-alt" d="M174.8 123.6 L178.7 107.5 L192.3 92 L202.5 92 L207.4 99.3 L213.2 92 L256.9 92 L248.6 105.1 L257.4 135.2 L270 149.3 L270.5 167.3 L262.7 162.4 L234.6 158.5 L192.8 160 L191.8 144.9 L187.5 138.6 L188.9 132.3 L181.1 133.3 L178.2 124.5 Z"/>
+    <path class="country" d="M674.5 135.2 L655.6 156.6 L624.5 181.8 L604.1 205.6 L599.7 215.3 L592.5 201.7 L592.5 152.7 L603.1 135.2 L626.9 121.6 L644.4 120.2 L667.7 92 L677 92 L677 132.8 Z"/>
+    <path class="country country-alt" d="M208.8 167.8 L208.8 177 L184.5 175.5 L190.4 159.5 L208.8 161.4 Z"/>
+    <g class="flag-country uganda" data-country="Uganda" data-x="480.2" data-y="151.8" role="button" tabindex="0" aria-label="Uganda anzeigen"><path class="country" d="M495.3 137.6 L501.6 131.8 L507.5 139.1 L507 144.9 L515.2 160.5 L511.8 174.1 L501.6 189.1 L495.8 188.2 L494.8 184.3 L488.5 190.6 L484.6 187.7 L475.4 193.5 L473 206.6 L459.4 206.1 L450.2 212.9 L445.8 211.9 L450.7 180.4 L467.7 162.4 L460.9 157.1 L462.8 139.6 L474 138.1 L479.8 142 L479.8 139.1 L487.6 136.7 Z"/></g>
+    <path class="country" d="M158.8 179.9 L155.9 185.7 L149.6 186.7 L145.7 184.3 L144.7 177 L148.6 172.6 L154.4 172.6 Z"/>
+    <path class="country country-alt" d="M591.5 192.5 L591.5 203.7 L598.8 217.3 L590 221.2 L588.6 228 L581.8 231.4 L571.1 259.5 L566.7 259.1 L550.7 245.5 L546.8 234.3 L503.6 207.6 L503.6 200.8 L513.8 197.4 L510.9 193.5 L505.5 196.9 L502.1 189.6 L512.8 175 L516.7 161.4 L502.6 129.9 L508.9 125.5 L526.4 125.5 L540.5 129.4 L554.1 140.1 L573 143.5 L578.9 135.7 L587.6 131.3 L594.9 135.7 L601.7 135.2 L591.5 151.2 Z"/>
+    <path class="country" d="M241.4 222.6 L235.5 227.5 L224.4 218.7 L223.4 226.5 L212.2 225.5 L210.8 234.8 L214.2 234.3 L216.6 245.9 L210.8 243.5 L206.9 248.9 L192.3 231.4 L194.3 229.4 L185.5 223.6 L187.5 222.1 L183.1 217.3 L187.9 216.3 L177.7 205.6 L184.1 197.9 L184.1 190.1 L191.8 190.6 L184.5 183.8 L187.9 185.2 L187.9 178 L209.8 178.4 L210.3 159 L233.6 159.5 L232.6 175.5 L243.8 172.1 L248.6 178.4 L248.6 182.3 L242.8 186.2 L241.8 195.9 L250.1 202.2 L249.1 218.7 L244.8 228.5 Z"/>
+    <path class="country country-alt" d="M235.5 173.1 L235 161 L263.2 163.9 L271 169.2 L278.3 141.5 L301.1 140.6 L303 144.4 L296.2 160 L291.4 200.3 L272 225.1 L269.5 247.9 L254 262.9 L249.6 262.9 L249.1 255.2 L240.9 256.6 L237.5 262.4 L228.2 256.1 L217.6 264.9 L207.9 250.3 L210.8 245 L217.6 246.9 L213.7 227.5 L223.4 228 L225.8 219.7 L230.2 228 L238 228.5 L240.9 225.1 L243.8 230.4 L250.6 218.3 L251.1 200.8 L243.3 195.4 L244.3 186.2 L250.1 178.9 L245.2 171.2 Z"/>
+    <path class="country" d="M452.6 211.5 L456 208.5 L460.9 225.5 L449.2 225.1 L444.8 232.8 L437.1 231.4 L441.9 215.8 Z"/>
+    <g class="flag-country drc" data-country="DR Kongo" data-x="367.7" data-y="215.6" role="button" tabindex="0" aria-label="DR Kongo anzeigen"><path class="country" d="M364.2 126 L378.3 118.7 L388.5 120.2 L390.9 115.3 L404 119.2 L414.7 117.7 L427.3 130.4 L433.7 127.4 L440.5 129.4 L445.8 125.5 L457 137.2 L456.5 140.6 L460.9 141.5 L459.9 158 L466.2 162.4 L449.2 180.4 L444.8 211.5 L435.1 227.5 L440 237.7 L437.1 255.2 L440.9 272.6 L439 281.4 L456.5 312 L434.6 315.9 L435.1 320.7 L427.8 327.5 L431.2 332.4 L427.8 363.5 L439.5 374.6 L445.3 371.2 L445.3 386.3 L436.1 387.7 L429.8 375.6 L418.6 371.2 L412.8 361.5 L407.9 366.9 L398.7 365.9 L390 362.5 L390 355.7 L376.8 358.6 L377.3 354.2 L372 350.3 L350.1 355.7 L350.6 341.1 L344.8 330.4 L344.3 298.4 L329.3 298.4 L329.7 292.6 L314.2 294 L312.3 308.6 L289.4 309.6 L275.8 277.5 L221.4 277.5 L225.3 275.1 L224.8 266.3 L232.1 260.5 L236.5 264.9 L241.4 258.1 L249.1 256.6 L248.6 265.4 L253.5 264.4 L270.5 248.9 L272.9 225.5 L292.8 199.8 L297.2 161.4 L304.5 143.5 L303 129.9 L310.3 120.7 L317.1 118.2 L327.8 128.4 L349.6 132.8 L354.5 131.3 L359.4 122.6 Z"/></g>
+    <path class="country country-alt" d="M455.5 247.4 L445.8 256.6 L438.5 231.4 L446.3 233.8 L450.2 227.5 L457.5 227.5 L456 235.3 L460.4 236.7 L460.4 240.1 L454.5 244.5 Z"/>
+    <g class="flag-country angola" data-country="Angola" data-x="223.7" data-y="248.0" role="button" tabindex="0" aria-label="Angola anzeigen"><path class="country" d="M223.9 267.3 L224.4 274.1 L221 276 L220 264.9 L229.2 257.6 L230.7 260.5 Z"/></g>
+    <path class="country" d="M448.7 279.4 L445.8 258.1 L457 248.9 L456 245 L462.8 235.3 L457 234.3 L462.3 224.6 L457 208.5 L473.5 208.1 L471.1 219.7 L473 233.3 L479.8 226.5 L486.1 229.9 L486.1 236.2 L489 234.8 L488 228.5 L494.8 230.4 L500.7 224.6 L492.9 222.6 L496.8 222.1 L494.8 219.7 L501.2 214.9 L503.1 208.5 L546.8 235.7 L547.8 244 L568.2 261 L562.8 281.9 L568.7 293.5 L571.6 293.5 L568.7 317.8 L574 332.9 L572.5 339.2 L580.8 342.1 L582.3 346 L567.7 355.2 L550.7 356.7 L543.4 363.5 L539 361 L528.8 363 L525 359.1 L512.8 361 L504.6 332.9 L493.9 331.9 L465.2 317.8 L455 289.2 L446.8 283.8 Z"/>
+    <path class="country country-alt" d="M623 360.5 L631.8 362.5 L630.8 373.2 L625 374.6 L619.6 371.2 L619.2 364.4 Z"/>
+    <g class="flag-country angola" data-country="Angola" data-x="288.9" data-y="354.3" role="button" tabindex="0" aria-label="Angola anzeigen"><path class="country" d="M236.5 318.3 L229.7 295 L222.9 284.3 L232.1 279 L275.8 279 L281.2 298.4 L289.4 311 L313.7 310 L315.7 295.5 L328.3 294 L328.8 299.4 L344.3 299.8 L343.3 329.5 L349.6 343.1 L348.7 357.1 L372 353.7 L370.5 381.4 L347.2 381.4 L344.8 384.3 L344.8 430 L361.8 449.9 L327.8 454.8 L305.5 451.8 L297.7 445.5 L245.2 446 L234.6 439.7 L215.1 443.6 L215.6 423.7 L225.3 388.7 L231.6 378 L237.5 375.1 L241.8 363.9 L241.8 351.3 L231.6 326.1 Z"/></g>
+    <path class="country" d="M637.1 384.8 L642 376.1 L650.7 379.5 L647.8 389.7 L640.5 389.7 Z"/>
+    <path class="country country-alt" d="M346.2 419.8 L346.2 383.9 L372.5 382.4 L373 352.8 L376.4 355.2 L375.4 359.6 L388 357.1 L389.5 363.9 L399.2 367.3 L408.9 367.8 L412.3 363 L417.6 372.2 L428.3 375.6 L435.1 388.7 L443.4 386.8 L445.3 389.7 L446.8 369.3 L439 373.2 L428.8 362.5 L432.7 347.9 L432.2 330.9 L429.3 327.5 L435.6 322.2 L436.1 316.8 L456 313.4 L456 318.3 L467.2 319.3 L486.6 329.5 L491.4 335.3 L495.3 346.9 L490 351.3 L492.4 373.7 L486.1 377.5 L482.2 391.6 L486.1 397.9 L450.2 411 L452.1 420.3 L434.6 424.2 L431.2 432.9 L420.1 438.7 L408.4 454.8 L394.8 454.8 L381.7 447.5 L362.3 448.9 L347.7 433.4 Z"/>
+    <g class="flag-country malawi" data-country="Malawi" data-x="502.4" data-y="372.2" role="button" tabindex="0" aria-label="Malawi anzeigen"><path class="country" d="M492.4 357.1 L491.4 351.3 L496.3 344.5 L488 330.4 L499.2 334.3 L503.6 358.6 L499.2 371.7 L503.6 380 L506 398.9 L508 401.3 L511.4 398.9 L515.2 403.8 L515.7 396.5 L522.5 407.2 L521.6 425.1 L514.3 429.5 L513.3 442.6 L503.1 425.6 L507 413.5 L505.5 403.8 L494.8 404.2 L483.7 394.1 L487.1 378.5 L494.8 373.2 L491.4 370.3 Z"/></g>
+    <g class="flag-country mozambique" data-country="Mosambik" data-x="517.8" data-y="426.7" role="button" tabindex="0" aria-label="Mosambik anzeigen"><path class="country" d="M478.8 583.4 L470.6 583.9 L467.7 572.8 L469.1 548.5 L461.8 520.3 L477.4 504.3 L477.9 494.1 L484.2 485.3 L481.7 468.3 L486.1 461.6 L486.1 435.8 L454.1 425.1 L451.1 412 L487.1 398.4 L495.3 406.7 L504.1 403.8 L502.6 428.5 L511.8 439.2 L510.9 443.1 L514.3 443.6 L513.8 433.9 L523 424.6 L524 408.1 L510.9 389.7 L509.4 371.2 L513.3 362.5 L525 360.5 L529.8 364.4 L537.6 362 L544.9 364.4 L551.7 357.6 L558.5 359.6 L583.7 346.9 L581.8 382.4 L585.7 407.6 L583.2 416.4 L562.3 440.2 L533.2 453.8 L534.2 457.2 L526.9 466.4 L520.1 469.3 L509.9 481 L503.1 478.5 L514.3 526.6 L510.9 538.3 L513.3 542.6 L507 551.9 L477.4 566.9 L473.5 572.8 L478.8 576.6 Z"/></g>
+    <path class="country" d="M404.5 457.2 L410.8 453.8 L421 439.7 L432.2 433.9 L436.1 424.6 L442.9 421.7 L452.1 421.7 L454.1 426.6 L480.8 434.8 L484.2 437.3 L484.6 444.6 L484.6 461.6 L480.3 468.8 L483.2 484.4 L476.4 494.1 L475.4 504.3 L461.3 519.8 L436.6 515.9 L433.2 510.6 L421 507.7 L417.1 492.1 L411.8 491.2 L411.3 486.3 L398.2 477.6 L387 455.2 L391.9 453.3 Z"/>
+    <path class="country country-alt" d="M623.5 559.6 L616.2 547.5 L618.2 535.4 L613.3 525.7 L612.9 514 L629.8 485.3 L625.5 446 L631.8 436.8 L632.3 429.5 L641 426.6 L643.4 429 L653.2 422.7 L658.5 426.1 L657 420.3 L662.9 415.9 L663.4 420.8 L667.2 419.3 L666.8 413.5 L676.5 406.7 L677 504.3 L663.8 543.1 L656.1 558.7 L637.6 566 Z"/>
+    <path class="country" d="M244.8 512.1 L224.4 468.3 L217.1 459.6 L217.1 444.1 L224.8 445 L235 441.2 L242.8 447 L299.1 447 L304.5 452.8 L329.3 456.2 L372.5 448.4 L384.1 450.9 L372.5 454.8 L366.2 461.6 L359.8 454.8 L332.2 459.6 L330.2 513.5 L318.6 513.5 L316.1 607.7 L306.9 614.5 L287 612.1 L280.7 601.9 L272 609.7 L262.7 599 L255 577.1 L249.1 543.1 L250.1 523.7 Z"/>
+    <path class="country country-alt" d="M321.5 514.5 L331.7 514.5 L333.1 460.6 L360.3 456.2 L365.2 463.5 L372.5 456.2 L385.6 452.8 L397.7 479 L409.9 486.3 L410.4 492.6 L416.2 493.1 L419.1 507.7 L431.2 510.6 L434.6 516.4 L421.5 523.2 L407.4 536.3 L400.2 550.4 L391.4 553.8 L386.6 567.4 L375.4 569.4 L356 561.6 L350.1 573.7 L335.6 584.9 L325.9 584.4 L327.8 568.9 L319.1 555.3 Z"/>
+    <path class="country" d="M465.7 588.3 L460.4 590.2 L453.6 583 L460.4 570.8 L468.6 576.2 L469.6 584.4 Z"/>
+    <path class="country country-alt" d="M431.7 616.5 L424.9 609.7 L411.8 615 L402.6 625.2 L405.5 632 L281.7 632 L273.9 610.6 L279.7 602.9 L284.6 612.1 L294.3 615.5 L308.4 615.5 L317.1 608.2 L319.1 556.7 L326.8 569.8 L325.4 586.4 L338 585.9 L351.6 573.7 L356.9 562.6 L376.8 570.8 L387 568.4 L392.4 554.8 L404.5 547.5 L409.4 536.3 L423 523.7 L440.9 516.9 L460.9 521.3 L467.7 547 L466.2 571.3 L459.4 569.8 L451.6 583.4 L460.9 591.7 L465.7 591.2 L468.1 585.9 L476.9 587.8 L469.6 611.1 L459.9 616.9 L450.7 632 L427.8 632 L434.6 621.3 Z"/>
+    <path class="country" d="M408.9 632 L404 625.7 L413.3 615.5 L424.4 611.1 L432.7 619.4 L427.8 630.5 Z"/>
   </g>
-  <text x="40" y="48" class="label" font-size="26">Einsatzländer</text>
-  <text x="40" y="72" class="hint">Klicken Sie auf ein markiertes Land.</text>
-  <g id="country-popup" class="popup" visibility="hidden">
-    <path d="M-12 26 0 44 12 26Z"/>
-    <rect x="-78" y="-22" width="156" height="48" rx="12"/>
-    <text id="country-popup-label" x="0" y="3">Land</text>
-  </g>
+  <g id="country-popup" class="popup" style="display:none"><path d="M-12 26 0 44 12 26Z"/><rect x="-78" y="-22" width="156" height="48" rx="12"/><text id="country-popup-label" x="0" y="3">Land</text></g>
   <script><![CDATA[
     (function () {
       var countries = Array.prototype.slice.call(document.querySelectorAll('.flag-country'));
@@ -135,26 +80,15 @@
         country.classList.add('is-active');
         label.textContent = country.getAttribute('data-country');
         popup.setAttribute('transform', 'translate(' + country.getAttribute('data-x') + ' ' + country.getAttribute('data-y') + ')');
-        popup.setAttribute('visibility', 'visible');
+        popup.style.display = 'block';
       }
       countries.forEach(function (country) {
-        country.addEventListener('click', function (event) {
-          event.stopPropagation();
-          showCountry(country);
-        });
-        country.addEventListener('keydown', function (event) {
-          if (event.key === 'Enter' || event.key === ' ') {
-            event.preventDefault();
-            showCountry(country);
-          }
-        });
+        country.addEventListener('click', function (event) { event.stopPropagation(); showCountry(country); });
+        country.addEventListener('keydown', function (event) { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); showCountry(country); } });
       });
-      document.documentElement.addEventListener('click', function (event) {
-        if (!event.target.closest || !event.target.closest('.flag-country')) {
-          popup.setAttribute('visibility', 'hidden');
-          countries.forEach(function (item) { item.classList.remove('is-active'); });
-        }
-      });
+      document.documentElement.addEventListener('click', function (event) { if (!event.target.closest || !event.target.closest('.flag-country')) { popup.style.display = 'none'; countries.forEach(function (item) { item.classList.remove('is-active'); }); } });
     }());
   ]]></script>
 </svg>
+
+

@@ -635,6 +635,24 @@ h3 {
   object-position: 92% 42%;
 }
 
+.jump-bernd-icon {
+  object-position: 50% 30%;
+}
+
+.jump-karin-icon {
+  object-position: 54% 28%;
+}
+
+.jump-janine-icon {
+  object-position: 22% 48%;
+}
+
+.jump-mario-icon,
+.jump-silke-icon,
+.jump-brigitte-icon {
+  object-position: 50% 22%;
+}
+
 .personal-facts,
 .team-facts,
 .expert-team-profiles {
@@ -941,7 +959,7 @@ h3 {
   width: 100%;
   min-width: 1040px;
   min-height: 650px;
-  aspect-ratio: 1480 / 930;
+  aspect-ratio: 1680 / 1080;
   border: 0;
 }
 
