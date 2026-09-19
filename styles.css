@@ -380,11 +380,18 @@ h3 {
   font-size: 1.06rem;
 }
 
-.map-card img {
+.map-card img,
+.map-card object {
   width: 100%;
   border-radius: 8px;
   border: 1px solid var(--line);
   background: var(--paper-2);
+}
+
+.flag-map-object {
+  display: block;
+  min-height: 520px;
+  aspect-ratio: 760 / 650;
 }
 
 .team-preview {
@@ -433,6 +440,30 @@ h3 {
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid var(--paper);
+}
+
+.mini-avatar {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 12px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid var(--paper);
+}
+
+.mini-avatar img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.mini-avatar img.focus-bernd {
+  transform: scale(1.2);
+  transform-origin: 50% 30%;
+  object-position: 50% 30%;
 }
 
 .mini-person img[src$="HoffmannJ.png"],
@@ -886,6 +917,34 @@ h3 {
   margin-top: 10px;
 }
 
+.org-section {
+  width: min(1160px, calc(100% - 44px));
+  margin-inline: auto;
+  padding-top: clamp(48px, 7vw, 86px);
+}
+
+.org-section .section-heading p:not(.eyebrow) {
+  color: var(--muted);
+}
+
+.org-chart-frame {
+  overflow-x: auto;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 34px rgba(31, 45, 41, 0.08);
+}
+
+.org-chart-object {
+  display: block;
+  width: 100%;
+  min-width: 1040px;
+  min-height: 650px;
+  aspect-ratio: 1480 / 930;
+  border: 0;
+}
+
 .supporters-section {
   padding: clamp(42px, 6vw, 76px) 0;
 }
@@ -1050,6 +1109,7 @@ h3 {
   .people-strip,
   .donation-section,
   .additional-people,
+  .org-section,
   .map-section,
   .profile-index,
   .personal-facts,
