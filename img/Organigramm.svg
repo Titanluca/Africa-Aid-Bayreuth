@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 1080" role="img" aria-labelledby="org-title org-desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 1320" role="img" aria-labelledby="org-title org-desc">
   <title id="org-title">Organigramm von Africa-Aid-Bayreuth e.V.</title>
-  <desc id="org-desc">Hierarchisches Organigramm mit achtzehn Personen und ihren Funktionen im Verein.</desc>
+  <desc id="org-desc">Hierarchisches Organigramm mit einundzwanzig Personen und ihren Funktionen im Verein.</desc>
   <defs>
-    <clipPath id="normal-840-100-clip"><circle cx="840" cy="100" r="38"/></clipPath><clipPath id="normal-840-275-clip"><circle cx="840" cy="275" r="38"/></clipPath><clipPath id="normal-150-470-clip"><circle cx="150" cy="470" r="38"/></clipPath><clipPath id="normal-426-470-clip"><circle cx="426" cy="470" r="38"/></clipPath><clipPath id="normal-top-702-470-clip"><circle cx="702" cy="470" r="38"/></clipPath><clipPath id="normal-978-470-clip"><circle cx="978" cy="470" r="38"/></clipPath><clipPath id="normal-top-1254-470-clip"><circle cx="1254" cy="470" r="38"/></clipPath><clipPath id="normal-1530-470-clip"><circle cx="1530" cy="470" r="38"/></clipPath><clipPath id="team-rainer-clip"><circle cx="100" cy="720" r="38"/></clipPath><clipPath id="normal-310-720-clip"><circle cx="310" cy="720" r="38"/></clipPath><clipPath id="team-stefanie-clip"><circle cx="520" cy="720" r="38"/></clipPath><clipPath id="team-phillip-clip"><circle cx="730" cy="720" r="38"/></clipPath><clipPath id="normal-top-940-720-clip"><circle cx="940" cy="720" r="38"/></clipPath><clipPath id="normal-1150-720-clip"><circle cx="1150" cy="720" r="38"/></clipPath><clipPath id="normal-left-top-1360-720-clip"><circle cx="1360" cy="720" r="38"/></clipPath><clipPath id="normal-top-1570-720-clip"><circle cx="1570" cy="720" r="38"/></clipPath><clipPath id="normal-1250-940-clip"><circle cx="1250" cy="940" r="38"/></clipPath><clipPath id="normal-1470-940-clip"><circle cx="1470" cy="940" r="38"/></clipPath>
+    <clipPath id="normal-840-100-clip"><circle cx="840" cy="100" r="38"/></clipPath><clipPath id="normal-840-275-clip"><circle cx="840" cy="275" r="38"/></clipPath><clipPath id="normal-150-470-clip"><circle cx="150" cy="470" r="38"/></clipPath><clipPath id="normal-426-470-clip"><circle cx="426" cy="470" r="38"/></clipPath><clipPath id="normal-top-702-470-clip"><circle cx="702" cy="470" r="38"/></clipPath><clipPath id="normal-978-470-clip"><circle cx="978" cy="470" r="38"/></clipPath><clipPath id="normal-top-1254-470-clip"><circle cx="1254" cy="470" r="38"/></clipPath><clipPath id="normal-1530-470-clip"><circle cx="1530" cy="470" r="38"/></clipPath><clipPath id="team-rainer-clip"><circle cx="100" cy="720" r="38"/></clipPath><clipPath id="normal-310-720-clip"><circle cx="310" cy="720" r="38"/></clipPath><clipPath id="team-stefanie-clip"><circle cx="520" cy="720" r="38"/></clipPath><clipPath id="team-philipp-clip"><circle cx="730" cy="720" r="38"/></clipPath><clipPath id="normal-top-940-720-clip"><circle cx="940" cy="720" r="38"/></clipPath><clipPath id="normal-1150-720-clip"><circle cx="1150" cy="720" r="38"/></clipPath><clipPath id="normal-left-top-1360-720-clip"><circle cx="1360" cy="720" r="38"/></clipPath><clipPath id="normal-top-1570-720-clip"><circle cx="1570" cy="720" r="38"/></clipPath><clipPath id="normal-560-940-clip"><circle cx="560" cy="940" r="38"/></clipPath><clipPath id="normal-top-840-940-clip"><circle cx="840" cy="940" r="38"/></clipPath><clipPath id="normal-top-1120-940-clip"><circle cx="1120" cy="940" r="38"/></clipPath><clipPath id="normal-1250-940-clip"><circle cx="1250" cy="1160" r="38"/></clipPath><clipPath id="normal-1470-940-clip"><circle cx="1470" cy="1160" r="38"/></clipPath>
     <linearGradient id="org-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".58" stop-color="#f8f5ed"/><stop offset="1" stop-color="#eef5df"/></linearGradient>
   </defs>
   <style>
@@ -16,7 +16,7 @@
     .section-label { font-family: Arial, sans-serif; font-size: 16px; font-weight: 900; fill: #114f42; text-anchor: middle; letter-spacing: .6px; }
     .label-bg { fill: #fff; fill-opacity: .92; stroke: #d9e2dd; stroke-width: 1; }
   </style>
-  <rect class="bg" width="1680" height="1080" rx="22"/>
+  <rect class="bg" width="1680" height="1320" rx="22"/>
   <path class="arc" d="M-80 185 C260 30 560 60 900 175 S1360 255 1760 70"/>
   <path class="arc" d="M-60 840 C260 690 610 780 910 660 S1300 590 1740 740"/>
   <text x="840" y="48" class="section-label">AFRICA-AID-BAYREUTH E.V.</text>
@@ -24,11 +24,13 @@
     <path class="line" d="M840 220 V237"/>
     <path class="line" d="M840 395 V420 H150 V432 M840 420 H426 V432 M840 420 H702 V432 M840 420 H978 V432 M840 420 H1254 V432 M840 420 H1530 V432"/>
     <path class="line" d="M840 395 V665 H100 V682 M840 665 H310 V682 M840 665 H520 V682 M840 665 H730 V682 M840 665 H940 V682 M840 665 H1150 V682 M840 665 H1360 V682 M840 665 H1570 V682"/>
-    <path class="line" d="M1360 852 V880 H1250 V902 M1360 880 H1470 V902"/>
+    <path class="line" d="M840 852 V890 H560 V902 M840 890 V902 M840 890 H1120 V902"/>
+    <path class="line" d="M1360 852 V1100 H1250 V1122 M1360 1100 H1470 V1122"/>
   </g>
-  <rect class="label-bg" x="660" y="386" width="360" height="28" rx="14"/><text x="840" y="406" class="section-label">FACHVERANTWORTUNG</text>
+  <rect class="label-bg" x="690" y="414" width="300" height="28" rx="14"/><text x="840" y="434" class="section-label">FACHVERANTWORTUNG</text>
   <rect class="label-bg" x="575" y="625" width="530" height="28" rx="14"/><text x="840" y="645" class="section-label">PROJEKTE, EINSATZ UND STANDORT</text>
-  <rect class="label-bg" x="1286" y="846" width="148" height="28" rx="14"/><text x="1360" y="866" class="section-label">EHRENAMT</text>
+  <rect class="label-bg" x="555" y="876" width="570" height="28" rx="14"/><text x="840" y="896" class="section-label">SERVICE, VERTRIEB UND ÖFFENTLICHKEIT</text>
+  <rect class="label-bg" x="1286" y="1066" width="148" height="28" rx="14"/><text x="1360" y="1086" class="section-label">EHRENAMT</text>
   <g class="node" id="node-bernd">
   <rect class="node-card" x="745.0" y="150.0" width="190" height="82" rx="13"/>
   <image href="Kripp.jpg" x="802" y="62" width="76" height="76" preserveAspectRatio="xMidYMid slice" clip-path="url(#normal-840-100-clip)"/>
@@ -114,11 +116,11 @@
   <text class="role" x="520" y="820.0">Pädagogik</text>
   <text class="role" x="520" y="836.0">Schulen</text>
 </g>
-  <g class="node" id="node-phillip">
+  <g class="node" id="node-philipp">
   <rect class="node-card" x="628.0" y="770.0" width="204" height="70" rx="13"/>
-  <image href="Team.jpg" x="415.5" y="641.8" width="387.6" height="217.9" preserveAspectRatio="none" clip-path="url(#team-phillip-clip)"/>
+  <image href="Team.jpg" x="415.5" y="641.8" width="387.6" height="217.9" preserveAspectRatio="none" clip-path="url(#team-philipp-clip)"/>
   <circle class="avatar-ring" cx="730" cy="720" r="38"/>
-  <text class="name" x="730" y="799.0">Phillip Brüderle</text>
+  <text class="name" x="730" y="799.0">Philipp Brüderle</text>
   <text class="role" x="730" y="820.0">Logistik</text>
 </g>
   <g class="node" id="node-mario">
@@ -139,7 +141,7 @@
 </g>
   <g class="node" id="node-janine">
   <rect class="node-card" x="1265.0" y="770.0" width="190" height="70" rx="13"/>
-  <image href="HoffmannJ.png" x="1322" y="682" width="76" height="76" preserveAspectRatio="xMinYMin slice" clip-path="url(#normal-left-top-1360-720-clip)"/>
+  <image href="HoffmannJ.png" x="1325" y="586" width="122" height="272" preserveAspectRatio="none" clip-path="url(#normal-left-top-1360-720-clip)"/>
   <circle class="avatar-ring" cx="1360" cy="720" r="38"/>
   <text class="name" x="1360" y="799.0">Janine Hoffmann</text>
   <text class="role" x="1360" y="820.0">Rekrutierung</text>
@@ -152,19 +154,42 @@
   <text class="role" x="1570" y="820.0">Immobilienpflege</text>
   <text class="role" x="1570" y="836.0">Bayreuth</text>
 </g>
+  <g class="node" id="node-christian">
+  <rect class="node-card" x="435.0" y="990.0" width="250" height="82" rx="13"/>
+  <image href="Chrissi.jpg" x="522" y="902" width="76" height="76" preserveAspectRatio="xMidYMid slice" clip-path="url(#normal-560-940-clip)"/>
+  <circle class="avatar-ring" cx="560" cy="940" r="38"/>
+  <text class="name" x="560" y="1019.0">Christian Häfner</text>
+  <text class="role" x="560" y="1040.0">Kundenzufriedenheit</text>
+  <text class="role" x="560" y="1056.0">Rückmeldungen</text>
+</g>
+  <g class="node" id="node-matthias">
+  <rect class="node-card" x="725.0" y="990.0" width="230" height="70" rx="13"/>
+  <image href="Matthias.jpg" x="802" y="902" width="76" height="76" preserveAspectRatio="xMidYMin slice" clip-path="url(#normal-top-840-940-clip)"/>
+  <circle class="avatar-ring" cx="840" cy="940" r="38"/>
+  <text class="name" x="840" y="1019.0">Matthias Thamm</text>
+  <text class="role" x="840" y="1040.0">Vertriebsleitung</text>
+</g>
+  <g class="node" id="node-marie">
+  <rect class="node-card" x="1000.0" y="990.0" width="240" height="82" rx="13"/>
+  <image href="Marie.png" x="1082" y="902" width="76" height="76" preserveAspectRatio="xMidYMin slice" clip-path="url(#normal-top-1120-940-clip)"/>
+  <circle class="avatar-ring" cx="1120" cy="940" r="38"/>
+  <text class="name" x="1120" y="1019.0">Marie Schmidt</text>
+  <text class="role" x="1120" y="1040.0">Ehrenamt</text>
+  <text class="role" x="1120" y="1056.0">Social Media</text>
+</g>
   <g class="node" id="node-luca">
-  <rect class="node-card" x="1155.0" y="990.0" width="190" height="70" rx="13"/>
-  <image href="HoffmannL.png" x="1212" y="902" width="76" height="76" preserveAspectRatio="xMidYMid slice" clip-path="url(#normal-1250-940-clip)"/>
-  <circle class="avatar-ring" cx="1250" cy="940" r="38"/>
-  <text class="name" x="1250" y="1019.0">Luca Hoffmann</text>
-  <text class="role" x="1250" y="1040.0">Ehrenamt</text>
+  <rect class="node-card" x="1155.0" y="1210.0" width="190" height="70" rx="13"/>
+  <image href="HoffmannL.png" x="1212" y="1122" width="76" height="76" preserveAspectRatio="xMidYMid slice" clip-path="url(#normal-1250-940-clip)"/>
+  <circle class="avatar-ring" cx="1250" cy="1160" r="38"/>
+  <text class="name" x="1250" y="1239.0">Luca Hoffmann</text>
+  <text class="role" x="1250" y="1260.0">Ehrenamt</text>
 </g>
   <g class="node" id="node-merle">
-  <rect class="node-card" x="1375.0" y="990.0" width="190" height="70" rx="13"/>
-  <image href="Merle.png" x="1432" y="902" width="76" height="76" preserveAspectRatio="xMidYMid slice" clip-path="url(#normal-1470-940-clip)"/>
-  <circle class="avatar-ring" cx="1470" cy="940" r="38"/>
-  <text class="name" x="1470" y="1019.0">Merle Wilders</text>
-  <text class="role" x="1470" y="1040.0">Ehrenamt</text>
+  <rect class="node-card" x="1375.0" y="1210.0" width="190" height="70" rx="13"/>
+  <image href="Merle.png" x="1432" y="1122" width="76" height="76" preserveAspectRatio="xMidYMid slice" clip-path="url(#normal-1470-940-clip)"/>
+  <circle class="avatar-ring" cx="1470" cy="1160" r="38"/>
+  <text class="name" x="1470" y="1239.0">Merle Wilders</text>
+  <text class="role" x="1470" y="1260.0">Ehrenamt</text>
 </g>
 </svg>
 
